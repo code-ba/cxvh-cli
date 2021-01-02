@@ -1,0 +1,18 @@
+{
+  "name": "cxvh-cli",
+  "version": "1.0.0",
+  "description": "cxvh-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
