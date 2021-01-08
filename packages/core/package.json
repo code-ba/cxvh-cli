@@ -17,12 +17,14 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://r.cnpmjs.org/"
+    "registry": "http://r.cnpmjs.org/",
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
     "@cxvh-cli/utils": "^0.0.2"
-  }
+  },
+  "gitHead": "45b105b83e783648aa6ce382074201eef4099949"
 }
