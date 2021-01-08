@@ -1,6 +1,6 @@
 {
   "name": "@cxvh-cli/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "cxvh-cli core",
   "author": "cxvh <lvcaodi@outlook.com>",
   "homepage": "",
@@ -24,7 +24,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@cxvh-cli/utils": "^0.0.2"
+    "@cxvh-cli/utils": "^0.0.3"
   },
   "gitHead": "45b105b83e783648aa6ce382074201eef4099949"
 }
