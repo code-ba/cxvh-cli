@@ -14,7 +14,8 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://r.cnpmjs.org/"
+    "registry": "http://r.cnpmjs.org/",
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
