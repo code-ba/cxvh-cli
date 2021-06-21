@@ -1,0 +1,33 @@
+{
+  "name": "@cxvh-cli/init",
+  "version": "0.0.3",
+  "description": "cxvh-cli init",
+  "author": "cxvh <lvcaodi@outlook.com>",
+  "homepage": "https://github.com/code-ba/cxvh-cli#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://r.cnpmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-ba/cxvh-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@cxvh-cli/log": "file:../../utils/log",
+    "@cxvh-cli/command": "file:../../models/command"
+  },
+  "bugs": {
+    "url": "https://github.com/code-ba/cxvh-cli/issues"
+  }
+}

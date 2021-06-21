@@ -1,0 +1,44 @@
+{
+  "name": "@cxvh-cli/core",
+  "version": "0.0.3",
+  "description": "cxvh-cli core",
+  "author": "cxvh <lvcaodi@outlook.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "bin": {
+    "cxvh-cli": "bin/index.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://r.cnpmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@cxvh-cli/get-npm-info": "file:../../utils/get-npm-info",
+    "@cxvh-cli/exec": "file:../exec",
+    "@cxvh-cli/log": "file:../../utils/log",
+    "@cxvh-cli/utils": "file:../../utils/utils",
+    "@cxvh-cli/init": "file:../../commands/init",
+    "colors": "^1.4.0",
+    "commander": "^7.1.0",
+    "dotenv": "^8.2.0",
+    "import-local": "^3.0.2",
+    "minimist": "^1.2.5",
+    "npmlog": "^4.1.2",
+    "path-exists": "^4.0.0",
+    "root-check": "^1.0.0",
+    "semver": "^7.3.4",
+    "user-home": "^2.0.0"
+  },
+  "gitHead": "6ddb6f22b5ac6a16184f9e9c0762064daba09909"
+}

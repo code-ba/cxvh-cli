@@ -1,0 +1,24 @@
+{
+  "name": "@cxvh-cli/utils",
+  "version": "0.0.3",
+  "description": "cxvh-cli utils",
+  "author": "cxvh <lvcaodi@outlook.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://r.cnpmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "gitHead": "6ddb6f22b5ac6a16184f9e9c0762064daba09909"
+}

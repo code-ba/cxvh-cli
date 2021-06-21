@@ -1,0 +1,38 @@
+{
+  "name": "@cxvh-cli/package",
+  "version": "0.0.3",
+  "description": "cxvh-cli npm modules",
+  "author": "cxvh <lvcaodi@outlook.com>",
+  "homepage": "https://github.com/code-ba/cxvh-cli#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://r.cnpmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-ba/cxvh-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@cxvh-cli/format-path": "file:../../utils/format-path",
+    "@cxvh-cli/utils": "file:../../utils/utils",
+    "@cxvh-cli/get-npm-info": "file:../../utils/get-npm-info",
+    "fs-extra": "^9.1.0",
+    "npminstall": "^4.10.0",
+    "path-exists": "^4.0.0",
+    "pkg-dir": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/code-ba/cxvh-cli/issues"
+  }
+}
