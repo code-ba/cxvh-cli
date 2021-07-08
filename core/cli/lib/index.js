@@ -30,7 +30,7 @@ async function core() {
 /*
 */
     }catch(e){
-        log.error(e.message);
+        log.error(e.message,2);
         if(program.debug){
             console.log(e)
         }

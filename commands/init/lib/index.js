@@ -24,7 +24,7 @@ class InitCommand extends Command{
             // 2. 下载模板
             // 3. 安装模板
         }catch (e){
-            log.error(e.message)
+            log.error(e.message,3)
         }
     }
     async prepare(){
@@ -77,6 +77,7 @@ class InitCommand extends Command{
 }
 function init(argv){
     // argv
+    // return new InitCommand([]); //argv
     return new InitCommand(argv);
 }
 module.exports=init;

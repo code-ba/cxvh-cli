@@ -27,6 +27,8 @@
     "url": "https://github.com/code-ba/cxvh-cli/issues"
   },
   "dependencies": {
+    "@cxvh-cli/log": "file:../../utils/log",
+    "@cxvh-cli/utils": "file:..\\..\\utils\\utils",
     "colors": "^1.4.0",
     "semver": "^7.3.5"
   }
