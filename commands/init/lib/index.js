@@ -58,7 +58,8 @@ class InitCommand extends Command{
                 if(comfirmDelete){
                     // 清空当前目录
                     // fse.removeSync() // 删除文件夹还要清空，下面用清空文件夹
-                    fse.emptyDirSync(localPath);
+                    // fse.emptyDirSync(localPath);
+                    console.log('清空当前目录',localPath)
                 }
             }
         }
