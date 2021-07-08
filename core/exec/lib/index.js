@@ -46,10 +46,16 @@ async function exec() {
         });
     }
     const rootFile = pkg.getRootFilePath()
-    // 在当前进程中调用
-    rootFile&&require(rootFile).apply(null,arguments); // 数组转参数
-    // 在 node 子进程中调用
-    rootFile&&require(rootFile).apply(null,arguments); // 数组转参数
+    if(rootFile){
+        // 在当前进程中调用
+        // rootFile&&require(rootFile).apply(null,arguments); // 数组转参数
+       // 在 node 子进程中调用
+        try {
+            require(rootFile).apply(null,arguments); // 数组转参数
+        }catch (e){
+            log.error(e.message)
+        }
+    }
 }
 
 module.exports = exec;

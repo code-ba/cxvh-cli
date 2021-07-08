@@ -24,8 +24,9 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@cxvh-cli/command": "file:../../models/command",
     "@cxvh-cli/log": "file:../../utils/log",
-    "@cxvh-cli/command": "file:../../models/command"
+    "colors": "^1.4.0"
   },
   "bugs": {
     "url": "https://github.com/code-ba/cxvh-cli/issues"

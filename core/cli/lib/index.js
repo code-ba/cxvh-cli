@@ -9,7 +9,7 @@ module.exports = core;
  */
 const path=require("path");
 const colors=require('colors');
-const semver=require('semver')
+const semver=require('semver');
 const userHome = require('user-home');
 const commander=require('commander');
 
@@ -31,6 +31,9 @@ async function core() {
 */
     }catch(e){
         log.error(e.message);
+        if(program.debug){
+            console.log(e)
+        }
     }
 }
 
@@ -84,7 +87,7 @@ async function prepare(){
     // 第一步检查版本号
     checkPkgVersion();
     // 第二步检查node版本号
-    checkNodeVersion();
+    // checkNodeVersion();
     // 第三步root账号启动检查和自动降级功能
     checkRoot();
     // 第四步用户主目录检查功能
