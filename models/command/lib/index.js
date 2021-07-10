@@ -8,7 +8,7 @@ const lowestVersion='13.0.0';
 class command{
     // TODO
     constructor(argv) {
-        log.verbose('Command constructor!',argv)
+        // log.verbose('Command constructor!',argv)
         if(!argv){
             throw new Error('参数不能为空！')
         }
@@ -26,8 +26,8 @@ class command{
             let chain=Promise.resolve()
             chain=chain.then(()=>this.checkNodeVersion());
             chain=chain.then(()=>this.initArgs());
-            chain=chain.then(()=>this.init());
-            chain=chain.then(()=>this.exec());
+            // chain=chain.then(()=>this.init());
+            // chain=chain.then(()=>this.exec());
             chain.catch(err=>{
                 log.error(err.message,4)
             })

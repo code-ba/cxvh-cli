@@ -67,7 +67,7 @@ function registerCommand(){
     })
     // 指定targetPath
     program.on('option:targetPath',function (){
-        process.env.CLI_TARGET_PATH=program.targetPath||program._optionValues.targetPath;
+        process.env.CLI_TARGET_PATH=program.targetPath||program.opts().targetPath||program._optionValues.targetPath;
     })
     // 对未知命令进行监听
     program.on('command:*',function(obj){
