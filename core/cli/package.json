@@ -27,7 +27,7 @@
     "@cxvh-cli/exec": "file:../exec",
     "@cxvh-cli/get-npm-info": "file:../../utils/get-npm-info",
     "@cxvh-cli/init": "file:../../commands/init",
-    "@cxvh-cli/log": "file:..\\..\\utils\\log",
+    "@cxvh-cli/log": "file:../../utils/log",
     "@cxvh-cli/utils": "file:../../utils/utils",
     "colors": "^1.4.0",
     "commander": "^7.2.0",
