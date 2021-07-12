@@ -22,19 +22,20 @@ class command{
             throw new Error('参数列表为空！')
         }
         this._argv=argv;
+        let _self=this;
         let runner=new Promise((resolve,reject)=>{
             let chain=Promise.resolve()
             chain=chain.then(()=>this.checkNodeVersion());
             chain=chain.then(()=>this.initArgs());
-            // chain=chain.then(()=>this.init());
-            // chain=chain.then(()=>this.exec());
+            chain=chain.then(()=>this.init());
+            chain=chain.then(()=>this.exec());
             chain.catch(err=>{
                 log.error(err.message,4)
             })
         })
     }
     initArgs(){
-        this.cmd=this._argv[this._argv.length-1]
+        this._cmd=this._argv[this._argv.length-1]
         this._argv=this._argv.slice(0,this._argv.length-1)
         // console.log(this._cmd,this._argv);
     }
@@ -46,17 +47,14 @@ class command{
         }
         // 比对最低版本号
     }
-    init(){
+    init1(){
         //
+        console.log('init')
+        return 123
     }
-    exec(){
+    exec1(){
         //
+        console.log('exec')
     }
 }
-
 module.exports = command;
-
-
-
-
-

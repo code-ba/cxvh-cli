@@ -11,12 +11,14 @@ const Command=require('@cxvh-cli/command');
 const log=require('@cxvh-cli/log');
 class InitCommand extends Command{
     init(){
+        console.log('-----------------------------------------------------------------------')
         this.projectName=this._argv[0]||'';
         this.force=!!this._cmd.force;
         log.verbose('projectName',this.projectName)
         log.verbose('force',this.force)
     }
     exec() {
+        console.log('########################################################################')
         console.log('exec 业务逻辑')
         try{
             // 1. 准备阶段
@@ -69,6 +71,7 @@ class InitCommand extends Command{
     }
     isCwdEmpty(localPath){
         let fileList=fs.readdirSync(localPath)
+        console.log(fileList)
         // 文件过滤的逻辑
         fileList=fileList.filter(file=>(
             !file.startsWith('.')&&['node_modules'].indexOf(file)<0

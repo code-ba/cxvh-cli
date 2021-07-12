@@ -4,7 +4,7 @@
   "description": "cxvh-cli",
   "main": "index.js",
   "scripts": {
-    "start": "cxvh-cli init --targetPath /learn/cxvh-cli/commands/init/lib --debug test-project --force",
+    "start": "cxvh-cli init --targetPath e:/learn/cxvh-cli/commands/init/lib --force --debug test-project",
     "dev": "cxvh-cli",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

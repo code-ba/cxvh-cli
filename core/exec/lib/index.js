@@ -5,7 +5,7 @@ const path = require('path')
 const Package = require('@cxvh-cli/package')
 const log = require('@cxvh-cli/log')
 const SETTINGS = {
-    init: '@cxvh-cli/init'
+    init: '@imooc-cli/init'
 }, CACHE_DIR = 'dependencies';
 
 async function exec() {
